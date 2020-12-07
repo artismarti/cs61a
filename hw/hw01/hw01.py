@@ -128,4 +128,17 @@ def hailstone(n):
     7
     """
     "*** YOUR CODE HERE ***"
-
+    """Pick a positive integer n as the start.
+If n is even, divide it by 2.
+If n is odd, multiply it by 3 and add 1.
+Continue this process until n is 1."""
+    length = 1
+    while n != 1:
+        print(n)
+        if n % 2  == 0:
+            n = n // 2
+        else:
+            n = (n * 3) + 1
+        length+=1
+    print(n)
+    return length
